@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:id="@+id/kk"
+        android:background="#16070707">
+
+
+<!--        <Spinner-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:id="@+id/comlist_sp"-->
+<!--            android:background="@drawable/sp1" />-->
+
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="70dp"
+                android:background="@drawable/edit_rounded"
+                android:id="@+id/edit_todate"
+                android:textSize="12dp"
+                android:layout_gravity="left"
+
+                android:layout_height="30dp">
+
+            </EditText>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/teal_200"
+                android:id="@+id/todate"
+                android:onClick="btn_Todate"
+                android:background="@android:drawable/ic_menu_my_calendar"
+                android:layout_gravity="center_vertical">
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+
+                android:text="التاريخ الى">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+    android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="70dp"
+            android:background="@drawable/edit_rounded"
+            android:id="@+id/edit_fromdate"
+            android:textSize="12dp"
+            android:layout_height="30dp"></EditText>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:id="@+id/fromdate"
+            android:onClick="btn_formdate"
+
+            android:background="@android:drawable/ic_menu_my_calendar"
+            android:layout_gravity="center_vertical">
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neo_sans_arabic"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="التاريخ من">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:textSize="13dp"
+    android:hint="نص القرار"
+    android:padding="5dp"
+    android:fontFamily="@font/neo_sans_arabic"
+    android:background="@drawable/edit_rounded"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="25dp"
+    android:id="@+id/decText"
+></EditText>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="احضار بيانات"
+                android:fontFamily="@font/neo_sans_arabic"
+                android:onClick="btn_getlist"
+                android:background="#0073CF"
+                android:textColor="@color/white"
+
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginLeft="10dp"></Button>
+
+            <EditText
+                android:id="@+id/decNum"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_rounded"
+
+                android:fontFamily="@font/neo_sans_arabic"
+                android:hint="رقم القرار"
+                android:padding="5dp"
+                android:textSize="13dp"
+
+                ></EditText>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#43C3C1C1"
+
+        android:divider="@android:color/darker_gray"
+        android:scrollbars="vertical"
+
+        />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/facebook_share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

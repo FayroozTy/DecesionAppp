@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/neo_sans_arabic"
+        android:backgroundTint="@color/black"
+        android:hint="الاسم"
+
+        android:paddingBottom="20dp">
+
+
+    </EditText>
+
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/neo_sans_arabic"
+        android:gravity="right"
+        android:backgroundTint="@color/black"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
+
+    <TextView
+
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="نسيت كلمة المرور"
+        android:textColor="#8F8686"
+        android:textSize="15dp" />
+
+    <Button
+
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/forgot_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#00008b"
+        android:fontFamily="@font/neo_sans_arabic"
+
+        android:onClick="btn_login"
+        android:text="تسجيل الدخول"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>
